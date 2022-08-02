@@ -1,0 +1,142 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ background:linear-gradient(white, black,pink);
+  font-weight: bold;
+}
+.container{
+  overflow: hidden;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  
+}
+.hero{
+  margin-bottom: 7%;
+  background:linear-gradient(purple,white);
+  color: black;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-template-areas: "nav" "content";
+  
+}
+
+.icono{
+    padding: 1%;
+    margin-top: 0px;
+    margin-left: 46%;
+   
+  
+}
+
+.blanco{
+  text-shadow: pink 12px 2px;
+  font-size: 30px;
+  color: black;
+  margin-right: 45%;
+  padding-left: 100px;
+  text-align: center;
+  margin-right: 50px;
+  
+  
+}
+
+.nav{
+  grid-area: nav;
+  display: grid;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  gap: 3em;
+  align-items: center;
+  height: 90px;
+  
+}
+
+.nav_list{
+  list-style: none;
+  display: grid;
+  grid-auto-flow:column ;
+  gap: 2em;
+  
+}
+.nav_logo{
+  font-size: 40px;
+  color: black;
+}
+.nav_link{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+.nav_menu{
+  display: none;
+}
+.nav_icon{
+  margin-right: 40px;
+  width: 30px;
+}
+
+.hero_main{
+  margin-top: 3%;
+    grid-area: content;
+    display: grid;
+    gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
+    padding-bottom: 180px;
+    grid-template-columns: 1fr 1fr  1fr;
+    align-items: center;
+}
+
+.hero_subtitle{
+  margin-top: 4%;
+  color: wheat;
+  font-size: 35px;
+  text-align: left
+  
+}
+.hero_cta{
+  text-decoration: none;
+  color:white;
+  padding: 15px 60px;
+  border:1px solid  3px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 500;
+ transition: background-color .5s;
+ margin-top: 10%;
+}
+.hero_cta:hover{
+  background-color: purple;
+  content: pink;
+}
+.hero_picture{
+  
+  
+  box-shadow:  4px 3px;
+  color: pink;
+}
+
+
+
+/*card*/
+.cards{
+  
+  box-shadow: 40px 40px 40px 40px;
+  color: pink;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+
+  }
+
+  .car_img{
+    border: 13px solid pink;
+    border-radius: 10px;
+  }
+
+
